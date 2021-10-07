@@ -11,14 +11,13 @@ int main(int argc, char *argv[]) {
 	
 	char *Oracion = (char *)malloc(sizeof(char));
 	
-	printf("Coloque una oracion : ");
-	scanf("%s", Oracion);
+	printf("Coloque una oracion :\n ");
+	gets(Oracion);
 	printf("Su oracion es : %s", Oracion);
 	
 	bool respuesta=verificacionoracion(Oracion);
 	
-	printf("%b",respuesta);
-	
+	printf("%s",respuesta ? "es una oracion" : "es una palabra");
 
 	
 	return 0;
